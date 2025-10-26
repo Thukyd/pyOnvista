@@ -19,8 +19,10 @@ A Python library for accessing financial data from onvista.de
 ## Installation
 
 ```bash
-pip install pyonvista
+pip install pyonvista-v2
 ```
+
+> **Package Name**: This enhanced v2.0 fork is published as `pyonvista-v2` on PyPI to avoid conflicts with the original package. The import statements remain the same (`from pyonvista.api import PyOnVista`).
 
 ## Quick Start
 
@@ -130,6 +132,17 @@ Built-in rate limiting with configurable delays:
 ```python
 api = PyOnVista(request_delay=0.2, timeout=60)
 ```
+
+## PyPI Package
+
+This enhanced v2.0 fork is available on PyPI as **[pyonvista-v2](https://pypi.org/project/pyonvista-v2/)**:
+
+- **Package Name**: `pyonvista-v2`
+- **Current Version**: 2.0.0
+- **Installation**: `pip install pyonvista-v2`
+- **Import**: `from pyonvista.api import PyOnVista` (unchanged from v1.0)
+
+The package includes both source distribution and universal wheel for easy installation across Python 3.8+ environments.
 
 ## License
 
