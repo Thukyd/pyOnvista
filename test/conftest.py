@@ -3,7 +3,7 @@ import aiohttp
 import shelve
 from pathlib import Path
 
-from pyonvista.api import PyOnVista, Instrument
+from src.pyonvista.api import PyOnVista, Instrument
 
 INSTRUMENT_DB = Path(__file__).parent / "assets" / "instruments_for_test"
 
