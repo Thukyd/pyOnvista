@@ -164,6 +164,7 @@ class Market:
 class Notation:
     market: Market
     id: str
+    currency: str = None
 
 
 @dataclasses.dataclass
@@ -478,7 +479,8 @@ def _add_notation(instrument: Instrument, notations: dict):
     """
     for notation in notations:
         market = Market(name=notation["market"]["name"], code=notation["market"]["codeExchange"])
-        notation = Notation(market=market, id=notation["market"]["idNotation"])
+        currency = notation.get("isoCurrency")
+        notation = Notation(market=market, id=notation["market"]["idNotation"], currency=currency)
         instrument.notations.append(notation)
 
 
