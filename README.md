@@ -138,13 +138,16 @@ api = PyOnVista(request_delay=0.2, timeout=60)
 This enhanced v2.0 fork is available on PyPI as **[pyonvista-v2](https://pypi.org/project/pyonvista-v2/)**:
 
 - **Package Name**: `pyonvista-v2`
-- **Current Version**: 2.0.1
+- **Current Version**: 2.0.2
 - **Installation**: `pip install pyonvista-v2`
 - **Import**: `from pyonvista.api import PyOnVista` (unchanged from v1.0)
 
 The package includes both source distribution and universal wheel for easy installation across Python 3.8+ environments.
 
 ## Changelog
+
+### 2.0.2 (2024-12-18)
+- Documentation update: added changelog section to README
 
 ### 2.0.1 (2024-12-18)
 - Added `currency` field to `Notation` class to distinguish notations by currency (e.g., SWX with CHF vs USD)
