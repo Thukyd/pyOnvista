@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pyonvista-v2"
-version = "2.0.0"
+version = "2.0.1"
 authors = [
   { name="Simon Bauer", email="seimen@cloasdata.de" },
   { name="Jan Philipp Tebbe", email="info@thukyd.com" }
